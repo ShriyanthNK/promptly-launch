@@ -25,13 +25,13 @@ export default function Hero() {
             initial="hidden"
             animate="show"
           >
-            {/* Badge */}
-            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 mb-6">
-              <span className="flex h-2 w-2 rounded-full bg-amber-400 ring-4 ring-amber-100" />
-              <span className="text-sm font-medium text-gray-600">
-                Currently under App Store review
-              </span>
-            </motion.div>
+            {/* Who it's for */}
+            <motion.p
+              variants={fadeUp}
+              className="text-base font-semibold text-brand-500 mb-3 tracking-wide"
+            >
+              For students & anyone who loses hours to their phone before getting anything done.
+            </motion.p>
 
             {/* Headline */}
             <motion.h1
@@ -63,6 +63,12 @@ export default function Hero() {
             <motion.p variants={fadeUp} className="text-xs text-gray-400">
               Be first to know when Promptly hits the App Store. No spam, ever.
             </motion.p>
+
+            {/* App Store status */}
+            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 mt-3">
+              <span className="flex h-2 w-2 rounded-full bg-amber-400 ring-4 ring-amber-100" />
+              <span className="text-sm text-gray-500">Currently under App Store review</span>
+            </motion.div>
 
             {/* App Store badge */}
             <motion.div variants={fadeUp} className="mt-6 flex justify-center lg:justify-start">
