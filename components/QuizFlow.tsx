@@ -188,6 +188,11 @@ export default function QuizFlow() {
   function handleContactSubmit() {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setContactError("Please enter a valid email."); return; }
     setContactError("");
+    fetch("/api/waitlist", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    }).catch(() => {});
     goNext();
   }
 
