@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -161,6 +161,17 @@ export default function QuizFlow() {
   const [contactError, setContactError] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
+  useEffect(() => {
+    const saved = localStorage.getItem("promptly_email");
+    if (saved) setEmail(saved);
+  }, []);
+
+  function handleEmailChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const val = e.target.value;
+    setEmail(val);
+    localStorage.setItem("promptly_email", val);
+  }
+
   const currentQ = step === 0 ? null : QUESTIONS[step - 1];
   const progress = Math.round((step / TOTAL_STEPS) * 100);
 
@@ -292,7 +303,7 @@ export default function QuizFlow() {
                       type="email"
                       placeholder="Your email address"
                       value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      onChange={handleEmailChange}
                       onKeyDown={(e) => e.key === "Enter" && handleContactSubmit()}
                       className="w-full px-4 py-3.5 rounded-xl border border-gray-200 text-gray-900 font-medium outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
                     />
