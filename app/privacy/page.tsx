@@ -46,7 +46,7 @@ const sections = [
   {
     title: "Your Rights",
     body: [
-      "You have the right to access, correct, or delete any personal data we hold about you. To make a request, email us at privacy@promptlyapp.com and we will respond within 30 days.",
+      "You have the right to access, correct, or delete any personal data we hold about you. To make a request, email us at shriyanthnandakumar@gmail.com and we will respond within 30 days.",
       "If you are in the European Economic Area, you have additional rights under the GDPR including the right to data portability and the right to lodge a complaint with your local supervisory authority.",
     ],
   },
@@ -66,7 +66,7 @@ const sections = [
   {
     title: "Contact",
     body: [
-      "If you have questions about this Privacy Policy, please contact us at privacy@promptlyapp.com.",
+      "If you have questions about this Privacy Policy, please contact us at shriyanthnandakumar@gmail.com.",
     ],
   },
 ];

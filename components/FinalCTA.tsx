@@ -2,8 +2,10 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 import EmailForm from "./EmailForm";
 import { fadeUp, staggerContainer } from "@/lib/animations";
+import { ArrowRight } from "lucide-react";
 
 export default function FinalCTA() {
   const ref = useRef(null);
@@ -44,26 +46,34 @@ export default function FinalCTA() {
             variants={fadeUp}
             className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4"
           >
-            You&apos;re already thinking
+            Find out your
             <br />
-            about downloading it.
+            productivity score.
           </motion.h2>
 
-          <motion.p variants={fadeUp} className="text-brand-200 text-lg mb-10 leading-relaxed">
-            Join the waitlist and be the first to know the moment Promptly
-            hits the App Store. No spam — just one email when it&apos;s live.
+          <motion.p variants={fadeUp} className="text-brand-200 text-lg mb-8 leading-relaxed">
+            Take the free 2-minute assessment and get personalized insights on exactly why you keep losing time to your phone — and what Promptly will do about it.
           </motion.p>
 
-          <motion.div variants={fadeUp} className="max-w-md mx-auto">
-            <EmailForm
-              size="large"
-              placeholder="your@email.com"
-              buttonText="Notify Me"
-              dark={true}
-            />
+          <motion.div variants={fadeUp} className="flex flex-col items-center gap-4">
+            <Link
+              href="/quiz"
+              className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-brand-600 font-bold text-lg px-8 py-4 rounded-xl transition-all active:scale-[0.97]"
+            >
+              Take the free assessment <ArrowRight className="w-5 h-5" />
+            </Link>
+            <p className="text-brand-300/60 text-sm">Or just leave your email:</p>
+            <div className="w-full max-w-md">
+              <EmailForm
+                size="default"
+                placeholder="your@email.com"
+                buttonText="Notify Me"
+                dark={true}
+              />
+            </div>
           </motion.div>
 
-          <motion.p variants={fadeUp} className="mt-4 text-brand-300/60 text-sm">
+          <motion.p variants={fadeUp} className="mt-6 text-brand-300/60 text-sm">
             Currently under App Store review · iOS first · Free to start
           </motion.p>
         </motion.div>

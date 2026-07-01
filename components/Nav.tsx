@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,7 +21,7 @@ export default function Nav() {
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-2.5">
           <Image
             src="/icon.png"
             alt="Promptly"
@@ -31,7 +32,7 @@ export default function Nav() {
           <span className="font-bold text-lg text-gray-900 tracking-tight">
             Promptly
           </span>
-        </div>
+        </Link>
 
         {/* CTA */}
         <a

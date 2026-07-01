@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
-    const { email } = await req.json();
+    const body = await req.json();
+    const { email, name, score, profile, goal, obstacle, solution, note, answers } = body;
 
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
@@ -24,14 +25,23 @@ export async function POST(req: NextRequest) {
           Authorization: `Bearer ${apiKey}`,
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, unsubscribed: false }),
+        body: JSON.stringify({
+          email,
+          first_name: name ?? "",
+          unsubscribed: false,
+        }),
       }
     );
 
     if (!res.ok) {
-      const body = await res.text();
-      console.error("[Waitlist] Resend error:", body);
+      const resBody = await res.text();
+      console.error("[Waitlist] Resend error:", resBody);
       return NextResponse.json({ error: "Failed to subscribe" }, { status: 500 });
+    }
+
+    // Log quiz data server-side for review
+    if (score !== undefined) {
+      console.log("[Quiz]", JSON.stringify({ email, name, score, profile, goal, obstacle, solution, note, answers }));
     }
 
     return NextResponse.json({ success: true });

@@ -80,7 +80,7 @@ const sections = [
   {
     title: "Contact",
     body: [
-      "If you have questions about these Terms & Conditions, please contact us at legal@promptlyapp.com.",
+      "If you have questions about these Terms & Conditions, please contact us at shriyanthnandakumar@gmail.com.",
     ],
   },
 ];
