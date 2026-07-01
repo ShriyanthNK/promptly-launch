@@ -5,6 +5,7 @@ import Link from "next/link";
 import PhoneFrame from "./PhoneFrame";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import { Clock, Zap, BarChart3, ArrowRight } from "lucide-react";
+import EmailForm from "./EmailForm";
 
 const measures = [
   { icon: Clock, label: "Your phone habits" },
@@ -80,12 +81,17 @@ export default function Hero() {
                 Start the free assessment <ArrowRight className="w-5 h-5" />
               </Link>
 
-              <div className="flex flex-wrap justify-center lg:justify-start gap-x-5 gap-y-1 mt-4">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-x-5 gap-y-1 mt-4 mb-6">
                 {["Takes 2 minutes", "Completely free", "Instant results", "No spam"].map((a) => (
                   <span key={a} className="text-sm text-gray-400 flex items-center gap-1.5">
                     <span className="text-green-500">✓</span> {a}
                   </span>
                 ))}
+              </div>
+
+              <p className="text-sm text-gray-400 mb-2 text-center lg:text-left">Or just get notified when we launch:</p>
+              <div className="max-w-sm mx-auto lg:mx-0">
+                <EmailForm placeholder="your@email.com" buttonText="Notify Me" />
               </div>
             </motion.div>
 
