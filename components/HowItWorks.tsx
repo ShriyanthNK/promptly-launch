@@ -8,7 +8,7 @@ import { fadeUp, staggerContainer, slideInLeft, slideInRight } from "@/lib/anima
 const steps = [
   {
     number: "01",
-    title: "Plan your morning",
+    title: "Plan your day",
     body: "Add today's tasks, set a due time for each, and decide how much screen time each one is worth. Takes two minutes.",
     screenshot: "/screenshots/today.png",
     alt: "Promptly task planning screen",
