@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -23,8 +24,8 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex items-center gap-5 text-sm text-gray-500">
-          <a href="#" className="hover:text-white transition-colors">Privacy</a>
-          <a href="#" className="hover:text-white transition-colors">Terms</a>
+          <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
+          <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
           <span>© {new Date().getFullYear()} Promptly</span>
         </div>
       </div>
