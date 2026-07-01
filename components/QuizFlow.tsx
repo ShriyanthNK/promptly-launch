@@ -186,7 +186,6 @@ export default function QuizFlow() {
   }
 
   function handleContactSubmit() {
-    if (!name.trim()) { setContactError("Please enter your name."); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setContactError("Please enter a valid email."); return; }
     setContactError("");
     goNext();
@@ -292,13 +291,6 @@ export default function QuizFlow() {
                     Answer 10 quick questions and get a personalized score with specific insights for your habits.
                   </p>
                   <div className="space-y-3 mb-4">
-                    <input
-                      type="text"
-                      placeholder="Your first name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      className="w-full px-4 py-3.5 rounded-xl border border-gray-200 text-gray-900 font-medium outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
-                    />
                     <input
                       type="email"
                       placeholder="Your email address"
