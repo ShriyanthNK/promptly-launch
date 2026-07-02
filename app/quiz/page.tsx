@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import QuizFlow from "@/components/QuizFlow";
 
 export const metadata: Metadata = {
-  title: "Find Your Productivity Score — Promptly",
+  title: "Free Productivity & Screen Time Quiz — Promptly",
   description:
-    "Answer 10 questions to find out why you keep losing hours to your phone — and get a personalized plan to fix it.",
+    "Take our free 2-minute quiz to find out why you keep losing hours to your phone — and get a personalized plan to fix it. Instant results.",
 };
 
 export default function QuizPage() {
