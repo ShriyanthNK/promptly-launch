@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://promptly-launch.vercel.app/sitemap.xml",
+    sitemap: "https://pactly-launch.vercel.app/sitemap.xml",
   };
 }

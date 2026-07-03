@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE = "https://promptly-launch.vercel.app";
+const BASE = "https://pactly-launch.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

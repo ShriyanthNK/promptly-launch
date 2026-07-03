@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const BASE_URL = "https://promptly-launch.vercel.app";
+const BASE_URL = "https://pactly-launch.vercel.app";
 
 export const metadata: Metadata = {
   title: {
