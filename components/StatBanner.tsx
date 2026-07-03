@@ -71,7 +71,7 @@ export default function StatBanner() {
           transition={{ duration: 0.5, delay: 0.45 }}
           className="text-gray-400 text-lg max-w-2xl mx-auto"
         >
-          Promptly doesn&apos;t take your phone away. It makes you{" "}
+          Pactly doesn&apos;t take your phone away. It makes you{" "}
           <strong className="text-white">earn that time</strong> by doing
           things that actually matter first.
         </motion.p>

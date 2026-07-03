@@ -16,10 +16,10 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Is Promptly a parental control app?",
+      name: "Is Pactly a parental control app?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Not exactly. Promptly is built for self-control too — teens, college students, and adults can use it completely on their own without any parent setup. Family Mode (coming soon) is available for those who want it.",
+        text: "Not exactly. Pactly is built for self-control too — teens, college students, and adults can use it completely on their own without any parent setup. Family Mode (coming soon) is available for those who want it.",
       },
     },
     {
@@ -35,20 +35,20 @@ const faqSchema = {
       name: "What if I genuinely need to delay a task?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No problem. Tap 'I'll do it later' and choose a delay: 10 minutes, 30 minutes, an hour, tonight, or a custom time. Promptly reschedules automatically — no guilt, just accountability.",
+        text: "No problem. Tap 'I'll do it later' and choose a delay: 10 minutes, 30 minutes, an hour, tonight, or a custom time. Pactly reschedules automatically — no guilt, just accountability.",
       },
     },
     {
       "@type": "Question",
-      name: "Does Promptly punish me for not completing tasks?",
+      name: "Does Pactly punish me for not completing tasks?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Promptly is designed to feel like a personal coach, not a warden. Incomplete tasks don't take away earned time — they just mean you don't earn more. The goal is motivation, not punishment.",
+        text: "No. Pactly is designed to feel like a personal coach, not a warden. Incomplete tasks don't take away earned time — they just mean you don't earn more. The goal is motivation, not punishment.",
       },
     },
     {
       "@type": "Question",
-      name: "What platforms is Promptly on?",
+      name: "What platforms is Pactly on?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "iOS first. Android support is on the roadmap. Join the waitlist and we'll keep you updated.",
@@ -56,7 +56,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Is Promptly free?",
+      name: "Is Pactly free?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Core features are free. A Pro plan with advanced modes, analytics, custom schedules, and Family Controls is coming. We'll announce pricing when we launch.",
@@ -64,10 +64,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "When does Promptly launch?",
+      name: "When does Pactly launch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Promptly is currently under App Store review. Join the waitlist and you'll be the first to know the moment it goes live.",
+        text: "Pactly is currently under App Store review. Join the waitlist and you'll be the first to know the moment it goes live.",
       },
     },
   ],

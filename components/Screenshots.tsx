@@ -6,7 +6,7 @@ import PhoneFrame from "./PhoneFrame";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 
 const screens = [
-  { src: "/screenshots/splash.png", alt: "Promptly welcome screen", label: "Welcome" },
+  { src: "/screenshots/splash.png", alt: "Pactly welcome screen", label: "Welcome" },
   { src: "/screenshots/today.png", alt: "Today task list", label: "Today" },
   { src: "/screenshots/rewards.png", alt: "Reward bank", label: "Rewards" },
   { src: "/screenshots/history.png", alt: "History & insights", label: "History" },

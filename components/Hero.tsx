@@ -112,7 +112,7 @@ export default function Hero() {
             <div className="phone-glow animate-float">
               <PhoneFrame
                 src="/screenshots/today.png"
-                alt="Promptly task list"
+                alt="Pactly task list"
                 size="lg"
               />
             </div>

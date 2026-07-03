@@ -11,21 +11,21 @@ const steps = [
     title: "Plan your day",
     body: "Add today's tasks, set a due time for each, and decide how much screen time each one is worth. Takes two minutes.",
     screenshot: "/screenshots/today.png",
-    alt: "Promptly task planning screen",
+    alt: "Pactly task planning screen",
   },
   {
     number: "02",
     title: "Get reminded at the right time",
-    body: "Promptly nudges you exactly when each task is due — not all at once first thing in the morning. Need a minute? Delay it with one tap.",
+    body: "Pactly nudges you exactly when each task is due — not all at once first thing in the morning. Need a minute? Delay it with one tap.",
     screenshot: "/screenshots/splash.png",
-    alt: "Promptly reminder",
+    alt: "Pactly reminder",
   },
   {
     number: "03",
     title: "Earn your screen time",
     body: "Tap Done and watch your Reward Bank grow. Screen time is something you earn — and that small shift changes everything.",
     screenshot: "/screenshots/rewards.png",
-    alt: "Promptly reward bank screen",
+    alt: "Pactly reward bank screen",
   },
 ];
 

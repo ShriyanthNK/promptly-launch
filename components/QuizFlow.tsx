@@ -162,14 +162,14 @@ export default function QuizFlow() {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("promptly_email");
+    const saved = localStorage.getItem("pactly_email");
     if (saved) setEmail(saved);
   }, []);
 
   function handleEmailChange(e: React.ChangeEvent<HTMLInputElement>) {
     const val = e.target.value;
     setEmail(val);
-    localStorage.setItem("promptly_email", val);
+    localStorage.setItem("pactly_email", val);
   }
 
   const currentQ = step === 0 ? null : QUESTIONS[step - 1];
@@ -235,7 +235,7 @@ export default function QuizFlow() {
     } catch {}
 
     if (typeof window !== "undefined") {
-      localStorage.setItem("promptly_quiz", JSON.stringify({ ...quizData, completedAt: new Date().toISOString() }));
+      localStorage.setItem("pactly_quiz", JSON.stringify({ ...quizData, completedAt: new Date().toISOString() }));
     }
 
     router.push("/results");
@@ -262,8 +262,8 @@ export default function QuizFlow() {
       <div className="flex items-center justify-between px-5 sm:px-8 py-4 border-b border-gray-100">
         <div className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/icon.png" alt="Promptly" className="w-7 h-7 rounded-lg" />
-          <span className="font-bold text-gray-900">Promptly</span>
+          <img src="/icon.png" alt="Pactly" className="w-7 h-7 rounded-lg" />
+          <span className="font-bold text-gray-900">Pactly</span>
         </div>
         <span className="text-sm text-gray-400 font-medium">
           {step === 0 ? "Getting started" : `${step} of ${TOTAL_STEPS - 1}`}

@@ -59,7 +59,7 @@ export default function EmailForm({
             You&apos;re on the list!
           </p>
           <p className={`text-sm ${dark ? "text-gray-400" : "text-gray-500"}`}>
-            We&apos;ll email you the moment Promptly goes live.
+            We&apos;ll email you the moment Pactly goes live.
           </p>
         </div>
       </div>

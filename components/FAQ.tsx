@@ -8,7 +8,7 @@ import { fadeUp, staggerContainer } from "@/lib/animations";
 const faqs = [
   {
     q: "Is this a parental control app?",
-    a: "Not exactly. Promptly is built for self-control too — teens, college students, and adults can use it completely on their own without any parent setup. Family Mode (coming soon) is available for those who want it.",
+    a: "Not exactly. Pactly is built for self-control too — teens, college students, and adults can use it completely on their own without any parent setup. Family Mode (coming soon) is available for those who want it.",
   },
   {
     q: "How does the screen time reward actually work?",
@@ -16,14 +16,14 @@ const faqs = [
   },
   {
     q: "What if I genuinely need to delay a task?",
-    a: 'No problem. Tap "I\'ll do it later" and choose a delay: 10 minutes, 30 minutes, an hour, tonight, or a custom time. Promptly reschedules automatically — no guilt, just accountability.',
+    a: 'No problem. Tap "I\'ll do it later" and choose a delay: 10 minutes, 30 minutes, an hour, tonight, or a custom time. Pactly reschedules automatically — no guilt, just accountability.',
   },
   {
     q: "Does it punish me for not completing tasks?",
-    a: "No. Promptly is designed to feel like a personal coach, not a warden. Incomplete tasks don't take away earned time — they just mean you don't earn more. The goal is motivation, not punishment.",
+    a: "No. Pactly is designed to feel like a personal coach, not a warden. Incomplete tasks don't take away earned time — they just mean you don't earn more. The goal is motivation, not punishment.",
   },
   {
-    q: "What platforms is Promptly on?",
+    q: "What platforms is Pactly on?",
     a: "iOS first. Android support is on the roadmap. Join the waitlist and we'll keep you updated.",
   },
   {
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "When does it launch?",
-    a: "Promptly is currently under App Store review. Join the waitlist and you'll be the first to know the moment it goes live.",
+    a: "Pactly is currently under App Store review. Join the waitlist and you'll be the first to know the moment it goes live.",
   },
 ];
 

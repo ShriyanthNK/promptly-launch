@@ -34,7 +34,7 @@ export default function FinalCTA() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/icon.png"
-                alt="Promptly"
+                alt="Pactly"
                 width={80}
                 height={80}
                 className="relative rounded-[22px] shadow-xl"
@@ -52,7 +52,7 @@ export default function FinalCTA() {
           </motion.h2>
 
           <motion.p variants={fadeUp} className="text-brand-200 text-lg mb-8 leading-relaxed">
-            Take the free 2-minute assessment and get personalized insights on exactly why you keep losing time to your phone — and what Promptly will do about it.
+            Take the free 2-minute assessment and get personalized insights on exactly why you keep losing time to your phone — and what Pactly will do about it.
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-col items-center gap-4">

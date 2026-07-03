@@ -9,12 +9,12 @@ export default function Footer() {
         <div className="flex items-center gap-2.5">
           <Image
             src="/icon.png"
-            alt="Promptly"
+            alt="Pactly"
             width={28}
             height={28}
             className="rounded-[8px]"
           />
-          <span className="font-bold text-white text-base">Promptly</span>
+          <span className="font-bold text-white text-base">Pactly</span>
         </div>
 
         {/* Tagline */}
@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="flex items-center gap-5 text-sm text-gray-500">
           <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
           <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
-          <span>© {new Date().getFullYear()} Promptly</span>
+          <span>© {new Date().getFullYear()} Pactly</span>
         </div>
       </div>
     </footer>

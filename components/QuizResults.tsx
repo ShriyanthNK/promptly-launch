@@ -33,28 +33,28 @@ function getScoreTier(score: number) {
     color: "text-red-500",
     ring: "stroke-red-400",
     bg: "bg-red-50",
-    message: "You're aware enough to take this quiz — that matters. Promptly is built exactly for where you are right now. The system does the heavy lifting so you don't have to rely on willpower.",
+    message: "You're aware enough to take this quiz — that matters. Pactly is built exactly for where you are right now. The system does the heavy lifting so you don't have to rely on willpower.",
   };
   if (score <= 60) return {
     label: "Aware, but not fully in control",
     color: "text-amber-500",
     ring: "stroke-amber-400",
     bg: "bg-amber-50",
-    message: "You have good instincts but inconsistent follow-through — which is exactly the gap Promptly closes. The right reminders and a real reward make all the difference.",
+    message: "You have good instincts but inconsistent follow-through — which is exactly the gap Pactly closes. The right reminders and a real reward make all the difference.",
   };
   if (score <= 80) return {
     label: "Close — just need the right system",
     color: "text-brand-500",
     ring: "stroke-brand-500",
     bg: "bg-brand-50",
-    message: "You already have strong habits. Promptly will lock them in, fill the gaps, and give you a reward system that makes consistency feel effortless.",
+    message: "You already have strong habits. Pactly will lock them in, fill the gaps, and give you a reward system that makes consistency feel effortless.",
   };
   return {
     label: "Highly self-aware and disciplined",
     color: "text-green-500",
     ring: "stroke-green-500",
     bg: "bg-green-50",
-    message: "Impressive. Promptly will amplify what you're already doing — adding structure, automation, and accountability to take your productivity to the next level.",
+    message: "Impressive. Pactly will amplify what you're already doing — adding structure, automation, and accountability to take your productivity to the next level.",
   };
 }
 
@@ -65,7 +65,7 @@ export default function QuizResults() {
   const [waitlistEmail, setWaitlistEmail] = useState("");
 
   useEffect(() => {
-    const raw = localStorage.getItem("promptly_quiz");
+    const raw = localStorage.getItem("pactly_quiz");
     if (!raw) { router.replace("/quiz"); return; }
     setData(JSON.parse(raw));
   }, [router]);
@@ -96,8 +96,8 @@ export default function QuizResults() {
       <div className="bg-white border-b border-gray-100 px-5 sm:px-8 py-4 flex items-center gap-2">
         <Link href="/" className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/icon.png" alt="Promptly" className="w-7 h-7 rounded-lg" />
-          <span className="font-bold text-gray-900">Promptly</span>
+          <img src="/icon.png" alt="Pactly" className="w-7 h-7 rounded-lg" />
+          <span className="font-bold text-gray-900">Pactly</span>
         </Link>
       </div>
 
@@ -184,7 +184,7 @@ export default function QuizResults() {
                 <CheckCircle2 className="w-6 h-6 text-green-400" />
               </div>
               <p className="text-white font-bold text-lg">You&apos;re on the list!</p>
-              <p className="text-brand-300 text-sm">We&apos;ll email you the moment Promptly goes live.</p>
+              <p className="text-brand-300 text-sm">We&apos;ll email you the moment Pactly goes live.</p>
             </div>
           ) : (
             <>
@@ -192,7 +192,7 @@ export default function QuizResults() {
                 What&apos;s next
               </p>
               <h3 className="text-2xl font-extrabold text-white mb-3">
-                Promptly is built to fix exactly this.
+                Pactly is built to fix exactly this.
               </h3>
               <p className="text-brand-200 text-sm mb-6 leading-relaxed">
                 The app is currently under App Store review. Join the waitlist and be the first to know when it launches.
@@ -227,7 +227,7 @@ export default function QuizResults() {
 
         <p className="text-center mt-6">
           <Link href="/" className="text-sm text-gray-400 hover:text-brand-500 transition-colors">
-            ← Back to Promptly
+            ← Back to Pactly
           </Link>
         </p>
       </div>

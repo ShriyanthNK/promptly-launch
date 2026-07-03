@@ -6,11 +6,11 @@ const BASE_URL = "https://promptly-launch.vercel.app";
 
 export const metadata: Metadata = {
   title: {
-    default: "Promptly — Do the work. Earn the scroll.",
-    template: "%s | Promptly",
+    default: "Pactly — Do the work. Earn the scroll.",
+    template: "%s | Pactly",
   },
   description:
-    "Promptly is the iOS app that rewards you with screen time for completing tasks. Stop fighting your phone — start earning it. Built for students, professionals, and anyone who wants to spend less time scrolling.",
+    "Pactly is the iOS app that rewards you with screen time for completing tasks. Stop fighting your phone — start earning it. Built for students, professionals, and anyone who wants to spend less time scrolling.",
   metadataBase: new URL(BASE_URL),
   keywords: [
     "screen time reward app",
@@ -29,17 +29,17 @@ export const metadata: Metadata = {
   authors: [{ name: "Shriyanth Nanda Kumar" }],
   creator: "Shriyanth Nanda Kumar",
   openGraph: {
-    title: "Promptly — Do the work. Earn the scroll.",
+    title: "Pactly — Do the work. Earn the scroll.",
     description:
       "The iOS app that rewards you with screen time for completing tasks. Finish your to-do list, unlock your apps.",
     type: "website",
     url: BASE_URL,
-    siteName: "Promptly",
+    siteName: "Pactly",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Promptly — Do the work. Earn the scroll.",
+    title: "Pactly — Do the work. Earn the scroll.",
     description:
       "The iOS app that rewards you with screen time for completing tasks. Finish your to-do list, unlock your apps.",
   },
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Promptly",
+  name: "Pactly",
   url: BASE_URL,
   description:
     "Earn screen time by completing real tasks. The iOS productivity app that rewards you for getting things done.",
@@ -75,11 +75,11 @@ const websiteSchema = {
 const appSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Promptly",
+  name: "Pactly",
   applicationCategory: "ProductivityApplication",
   operatingSystem: "iOS",
   description:
-    "Promptly is the task-first screen time reward app for iPhone. Add your tasks, get reminded when they're due, and earn screen time for completing them. Built for students, professionals, and anyone who wants to spend less time scrolling and more time doing.",
+    "Pactly is the task-first screen time reward app for iPhone. Add your tasks, get reminded when they're due, and earn screen time for completing them. Built for students, professionals, and anyone who wants to spend less time scrolling and more time doing.",
   offers: {
     "@type": "Offer",
     price: "0",

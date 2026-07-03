@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Promptly — Do the work. Earn the scroll.";
+export const alt = "Pactly — Do the work. Earn the scroll.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -38,7 +38,7 @@ export default function Image() {
           ✓
         </div>
         <span style={{ fontSize: "64px", fontWeight: "800", color: "white", letterSpacing: "-2px" }}>
-          Promptly
+          Pactly
         </span>
       </div>
       <p

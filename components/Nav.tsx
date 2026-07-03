@@ -24,13 +24,13 @@ export default function Nav() {
         <Link href="/" className="flex items-center gap-2.5">
           <Image
             src="/icon.png"
-            alt="Promptly"
+            alt="Pactly"
             width={34}
             height={34}
             className="rounded-[9px]"
           />
           <span className="font-bold text-lg text-gray-900 tracking-tight">
-            Promptly
+            Pactly
           </span>
         </Link>
 

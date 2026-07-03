@@ -96,7 +96,7 @@ export default function Problem() {
             <span className="hidden sm:block text-gray-300">·</span>
             <div className="flex items-center gap-3">
               <span className="text-green-500 text-xl">✓</span>
-              <span className="text-brand-500 font-semibold">Promptly is built exactly for this</span>
+              <span className="text-brand-500 font-semibold">Pactly is built exactly for this</span>
             </div>
           </div>
         </motion.div>

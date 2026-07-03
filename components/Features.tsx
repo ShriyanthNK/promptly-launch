@@ -16,7 +16,7 @@ const features = [
     icon: SkipForward,
     color: "bg-amber-50 text-amber-500",
     title: "Delay Without Guilt",
-    body: 'Push back a task in one tap: 10 min, 30 min, an hour, or tonight. Promptly reschedules automatically.',
+    body: 'Push back a task in one tap: 10 min, 30 min, an hour, or tonight. Pactly reschedules automatically.',
   },
   {
     icon: Star,
