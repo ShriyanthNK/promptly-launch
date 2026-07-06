@@ -24,6 +24,7 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex items-center gap-5 text-sm text-gray-500">
+          <Link href="/support" className="hover:text-white transition-colors">Support</Link>
           <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
           <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
           <span>© {new Date().getFullYear()} Pactly</span>
