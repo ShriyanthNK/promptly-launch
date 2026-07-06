@@ -34,13 +34,21 @@ export default function Nav() {
           </span>
         </Link>
 
-        {/* CTA */}
-        <a
-          href="#waitlist"
-          className="flex items-center gap-1.5 bg-brand-500 hover:bg-brand-600 active:scale-[0.97] text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200"
-        >
-          Join Waitlist
-        </a>
+        {/* CTAs */}
+        <div className="flex items-center gap-2">
+          <Link
+            href="/support"
+            className="text-sm font-semibold px-4 py-2 rounded-xl border border-brand-500 text-brand-500 bg-white hover:bg-brand-50 active:scale-[0.97] transition-all duration-200"
+          >
+            Support
+          </Link>
+          <a
+            href="#waitlist"
+            className="flex items-center gap-1.5 bg-brand-500 hover:bg-brand-600 active:scale-[0.97] text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200"
+          >
+            Join Waitlist
+          </a>
+        </div>
       </div>
     </nav>
   );

@@ -109,8 +109,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
-        {/* StartupBar widget */}
-        <script async src="https://startupbar.co/widget/loader.js" data-startup-id="8f0812e1-b16e-48e2-b949-a1c2aba4efbf" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
