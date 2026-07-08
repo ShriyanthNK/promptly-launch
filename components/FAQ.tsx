@@ -40,19 +40,19 @@ function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-100 last:border-0">
+    <div className="border-b border-brand-600/30 last:border-0">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between gap-4 py-5 text-left group"
       >
-        <span className="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-brand-500 transition-colors duration-200">
+        <span className="text-base sm:text-lg font-semibold text-white group-hover:text-brand-100 transition-colors duration-200">
           {q}
         </span>
-        <span className="shrink-0 w-7 h-7 rounded-full bg-gray-100 group-hover:bg-brand-100 transition-colors duration-200 flex items-center justify-center">
+        <span className="shrink-0 w-7 h-7 rounded-full bg-brand-600/30 group-hover:bg-brand-600/50 transition-colors duration-200 flex items-center justify-center">
           {open ? (
-            <Minus className="w-3.5 h-3.5 text-brand-500" />
+            <Minus className="w-3.5 h-3.5 text-brand-100" />
           ) : (
-            <Plus className="w-3.5 h-3.5 text-gray-500 group-hover:text-brand-500" />
+            <Plus className="w-3.5 h-3.5 text-brand-100 opacity-60 group-hover:opacity-100" />
           )}
         </span>
       </button>
@@ -67,7 +67,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
             transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
             className="overflow-hidden"
           >
-            <p className="pb-5 text-gray-500 leading-relaxed text-sm sm:text-base">
+            <p className="pb-5 text-brand-100 opacity-60 leading-relaxed text-sm sm:text-base">
               {a}
             </p>
           </motion.div>
@@ -82,7 +82,7 @@ export default function FAQ() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="py-24 sm:py-32 bg-white">
+    <section ref={ref} className="py-24 sm:py-32 bg-brand-900">
       <div className="max-w-3xl mx-auto px-5 sm:px-8">
         {/* Header */}
         <motion.div
@@ -99,7 +99,7 @@ export default function FAQ() {
           </motion.p>
           <motion.h2
             variants={fadeUp}
-            className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900"
+            className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white"
           >
             Got questions?{" "}
             <span className="text-gradient">We have answers.</span>
@@ -107,7 +107,7 @@ export default function FAQ() {
         </motion.div>
 
         <motion.div
-          className="bg-white rounded-2xl border border-gray-100 shadow-card px-6 sm:px-8"
+          className="bg-brand-700 rounded-2xl border border-brand-600/40 shadow-card px-6 sm:px-8"
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.55 }}

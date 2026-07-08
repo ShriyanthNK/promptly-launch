@@ -17,9 +17,9 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-brand-50" />
-      <div className="absolute -top-24 -right-24 w-[500px] h-[500px] bg-brand-100 rounded-full opacity-40 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 -left-32 w-[400px] h-[400px] bg-accent-light rounded-full opacity-50 blur-3xl pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-900 via-brand-900 to-brand-800" />
+      <div className="absolute -top-24 -right-24 w-[500px] h-[500px] bg-brand-500 rounded-full opacity-10 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 -left-32 w-[400px] h-[400px] bg-brand-600 rounded-full opacity-15 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8 w-full py-16 lg:py-24">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
@@ -41,17 +41,17 @@ export default function Hero() {
             {/* Hook headline */}
             <motion.h1
               variants={fadeUp}
-              className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.04] tracking-tight mb-5"
+              className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.04] tracking-tight mb-5 text-white"
             >
               Feeling frustrated that{" "}
               <span className="text-gradient">you keep scrolling</span>{" "}
               even though you want to be productive?
             </motion.h1>
 
-            {/* Subheadline driving to quiz */}
+            {/* Subheadline */}
             <motion.p
               variants={fadeUp}
-              className="text-lg sm:text-xl text-gray-500 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
+              className="text-lg sm:text-xl text-brand-100 opacity-70 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
             >
               Answer 10 questions to find out exactly why — and get a personalized plan to fix it.
             </motion.p>
@@ -64,7 +64,7 @@ export default function Hero() {
               {measures.map((m) => (
                 <div
                   key={m.label}
-                  className="flex items-center gap-2 bg-white border border-gray-100 rounded-full px-4 py-2 shadow-sm text-sm font-medium text-gray-600"
+                  className="flex items-center gap-2 bg-brand-700 border border-brand-600 rounded-full px-4 py-2 shadow-sm text-sm font-medium text-brand-100"
                 >
                   <m.icon className="w-4 h-4 text-brand-500" />
                   {m.label}
@@ -83,13 +83,13 @@ export default function Hero() {
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-x-5 gap-y-1 mt-4 mb-6">
                 {["Takes 2 minutes", "Completely free", "Instant results", "No spam"].map((a) => (
-                  <span key={a} className="text-sm text-gray-400 flex items-center gap-1.5">
-                    <span className="text-green-500">✓</span> {a}
+                  <span key={a} className="text-sm text-brand-100 opacity-60 flex items-center gap-1.5">
+                    <span className="text-brand-100">✓</span> {a}
                   </span>
                 ))}
               </div>
 
-              <p className="text-sm text-gray-400 mb-2 text-center lg:text-left">Or just get notified when we launch:</p>
+              <p className="text-sm text-brand-100 opacity-50 mb-2 text-center lg:text-left">Or just get notified when we launch:</p>
               <div className="max-w-sm mx-auto lg:mx-0">
                 <EmailForm placeholder="your@email.com" buttonText="Notify Me" />
               </div>
@@ -97,8 +97,8 @@ export default function Hero() {
 
             {/* App Store status */}
             <motion.div variants={fadeUp} className="inline-flex items-center gap-2 mt-6">
-              <span className="flex h-2 w-2 rounded-full bg-amber-400 ring-4 ring-amber-100" />
-              <span className="text-sm text-gray-500">Currently under App Store review</span>
+              <span className="flex h-2 w-2 rounded-full bg-brand-500 ring-4 ring-brand-500/20" />
+              <span className="text-sm text-brand-100 opacity-50">Currently under App Store review</span>
             </motion.div>
           </motion.div>
 
@@ -118,28 +118,30 @@ export default function Hero() {
             </div>
 
             <motion.div
-              className="absolute -left-12 top-1/4 bg-white rounded-2xl shadow-card px-4 py-3 flex items-center gap-3 border border-gray-100"
+              className="absolute -left-12 top-1/4 bg-brand-700 rounded-2xl shadow-card px-4 py-3 flex items-center gap-3 border border-brand-600"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.9, duration: 0.5 }}
             >
-              <div className="w-9 h-9 rounded-full bg-accent-light flex items-center justify-center text-lg">⭐</div>
+              <div className="w-9 h-9 rounded-full bg-brand-600 flex items-center justify-center">
+                <span className="text-brand-100 text-base font-bold">+</span>
+              </div>
               <div>
-                <p className="text-xs text-gray-500 leading-none mb-0.5">Just earned</p>
-                <p className="text-sm font-bold text-gray-900">+15 min</p>
+                <p className="text-xs text-brand-100 opacity-50 leading-none mb-0.5">Just earned</p>
+                <p className="text-sm font-bold text-white">+15 min</p>
               </div>
             </motion.div>
 
             <motion.div
-              className="absolute -right-10 bottom-1/4 bg-white rounded-2xl shadow-card px-4 py-3 flex items-center gap-3 border border-gray-100"
+              className="absolute -right-10 bottom-1/4 bg-brand-700 rounded-2xl shadow-card px-4 py-3 flex items-center gap-3 border border-brand-600"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1.1, duration: 0.5 }}
             >
               <span className="text-2xl">🔥</span>
               <div>
-                <p className="text-xs text-gray-500 leading-none mb-0.5">Day streak</p>
-                <p className="text-sm font-bold text-gray-900">7 days</p>
+                <p className="text-xs text-brand-100 opacity-50 leading-none mb-0.5">Day streak</p>
+                <p className="text-sm font-bold text-white">7 days</p>
               </div>
             </motion.div>
           </motion.div>

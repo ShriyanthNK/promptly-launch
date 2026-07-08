@@ -6,10 +6,10 @@ import PhoneFrame from "./PhoneFrame";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 
 const screens = [
-  { src: "/screenshots/splash.png", alt: "Pactly welcome screen", label: "Welcome" },
-  { src: "/screenshots/today.png", alt: "Today task list", label: "Today" },
+  { src: "/screenshots/today.png", alt: "Pactly task list", label: "Today" },
   { src: "/screenshots/rewards.png", alt: "Reward bank", label: "Rewards" },
   { src: "/screenshots/history.png", alt: "History & insights", label: "History" },
+  { src: "/screenshots/splash.png", alt: "Add new task", label: "Add Task" },
 ];
 
 export default function Screenshots() {
@@ -17,7 +17,7 @@ export default function Screenshots() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="py-24 sm:py-32 bg-white overflow-hidden">
+    <section ref={ref} className="py-24 sm:py-32 bg-brand-900 overflow-hidden">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         {/* Header */}
         <motion.div
@@ -34,7 +34,7 @@ export default function Screenshots() {
           </motion.p>
           <motion.h2
             variants={fadeUp}
-            className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900"
+            className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white"
           >
             Beautiful by default.{" "}
             <span className="text-gradient">Effective by design.</span>
@@ -52,7 +52,7 @@ export default function Screenshots() {
               transition={{ delay: 0.1 * i, duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
             >
               <PhoneFrame src={screen.src} alt={screen.alt} size="sm" />
-              <span className="text-sm font-medium text-gray-400">{screen.label}</span>
+              <span className="text-sm font-medium text-brand-100 opacity-50">{screen.label}</span>
             </motion.div>
           ))}
         </div>

@@ -29,7 +29,7 @@ export default function Nav() {
             height={34}
             className="rounded-[9px]"
           />
-          <span className="font-bold text-lg text-gray-900 tracking-tight">
+          <span className="font-bold text-lg text-white tracking-tight">
             Pactly
           </span>
         </Link>
@@ -38,7 +38,7 @@ export default function Nav() {
         <div className="flex items-center gap-2">
           <Link
             href="/support"
-            className="text-sm font-semibold px-4 py-2 rounded-xl border border-brand-500 text-brand-500 bg-white hover:bg-brand-50 active:scale-[0.97] transition-all duration-200"
+            className="text-sm font-semibold px-4 py-2 rounded-xl border border-brand-600 text-brand-100 hover:bg-brand-700 active:scale-[0.97] transition-all duration-200"
           >
             Support
           </Link>

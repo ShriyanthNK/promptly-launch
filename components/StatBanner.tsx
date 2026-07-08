@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import { motion, useInView, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 function CountUp({ target, duration = 1.8 }: { target: number; duration?: number }) {
@@ -28,18 +28,17 @@ export default function StatBanner() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-[#0f0e1e] py-24 sm:py-32"
+      className="relative overflow-hidden bg-brand-900 py-24 sm:py-32"
     >
-      {/* Gradient accent */}
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-900/80 via-[#0f0e1e] to-[#0f0e1e]" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-500/10 rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-700/30 via-brand-900 to-brand-900" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-500/8 rounded-full blur-3xl" />
 
       <div className="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-brand-300 font-semibold text-sm uppercase tracking-widest mb-4"
+          className="text-brand-500 font-semibold text-sm uppercase tracking-widest mb-4"
         >
           The average person
         </motion.p>
@@ -50,7 +49,7 @@ export default function StatBanner() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="flex items-baseline justify-center gap-3 mb-4"
         >
-          <span className="text-[96px] sm:text-[128px] font-black leading-none text-accent tabular-nums">
+          <span className="text-[96px] sm:text-[128px] font-black leading-none text-brand-100 tabular-nums">
             <CountUp target={106} />
           </span>
           <span className="text-3xl sm:text-4xl font-bold text-white">days</span>
@@ -69,10 +68,10 @@ export default function StatBanner() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.45 }}
-          className="text-gray-400 text-lg max-w-2xl mx-auto"
+          className="text-brand-100 opacity-60 text-lg max-w-2xl mx-auto"
         >
           Pactly doesn&apos;t take your phone away. It makes you{" "}
-          <strong className="text-white">earn that time</strong> by doing
+          <strong className="text-white opacity-100">earn that time</strong> by doing
           things that actually matter first.
         </motion.p>
       </div>

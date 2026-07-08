@@ -15,11 +15,11 @@ export default function FinalCTA() {
     <section
       ref={ref}
       id="waitlist"
-      className="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-br from-brand-900 via-brand-800 to-[#0f0e1e]"
+      className="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-br from-brand-700 via-brand-800 to-brand-900"
     >
       {/* Background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-500/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-[400px] h-[300px] bg-accent/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-[400px] h-[300px] bg-brand-600/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-2xl mx-auto px-5 sm:px-8 text-center">
         <motion.div
@@ -30,7 +30,7 @@ export default function FinalCTA() {
           {/* App icon */}
           <motion.div variants={fadeUp} className="flex justify-center mb-8">
             <div className="relative">
-              <div className="absolute inset-0 bg-brand-400 rounded-[28px] blur-xl opacity-50" />
+              <div className="absolute inset-0 bg-brand-500 rounded-[28px] blur-xl opacity-40" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/icon.png"
@@ -51,18 +51,18 @@ export default function FinalCTA() {
             productivity score.
           </motion.h2>
 
-          <motion.p variants={fadeUp} className="text-brand-200 text-lg mb-8 leading-relaxed">
+          <motion.p variants={fadeUp} className="text-brand-100 opacity-70 text-lg mb-8 leading-relaxed">
             Take the free 2-minute assessment and get personalized insights on exactly why you keep losing time to your phone — and what Pactly will do about it.
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-col items-center gap-4">
             <Link
               href="/quiz"
-              className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-brand-600 font-bold text-lg px-8 py-4 rounded-xl transition-all active:scale-[0.97]"
+              className="inline-flex items-center gap-2 bg-brand-100 hover:bg-white text-brand-900 font-bold text-lg px-8 py-4 rounded-xl transition-all active:scale-[0.97]"
             >
               Take the free assessment <ArrowRight className="w-5 h-5" />
             </Link>
-            <p className="text-brand-300/60 text-sm">Or just leave your email:</p>
+            <p className="text-brand-100 opacity-40 text-sm">Or just leave your email:</p>
             <div className="w-full max-w-md">
               <EmailForm
                 size="default"
@@ -73,7 +73,7 @@ export default function FinalCTA() {
             </div>
           </motion.div>
 
-          <motion.p variants={fadeUp} className="mt-6 text-brand-300/60 text-sm">
+          <motion.p variants={fadeUp} className="mt-6 text-brand-100 opacity-40 text-sm">
             Currently under App Store review · iOS first · Free to start
           </motion.p>
         </motion.div>

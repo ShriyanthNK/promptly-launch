@@ -34,7 +34,7 @@ export default function HowItWorks() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="py-24 sm:py-32 bg-white overflow-hidden">
+    <section ref={ref} className="py-24 sm:py-32 bg-brand-900 overflow-hidden">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         {/* Header */}
         <motion.div
@@ -51,7 +51,7 @@ export default function HowItWorks() {
           </motion.p>
           <motion.h2
             variants={fadeUp}
-            className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900"
+            className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white"
           >
             Three steps.{" "}
             <span className="text-gradient">Real results.</span>
@@ -78,13 +78,13 @@ export default function HowItWorks() {
                   className="flex-1 text-center lg:text-left"
                   variants={isEven ? slideInLeft : slideInRight}
                 >
-                  <span className="text-7xl font-black text-brand-100 leading-none block mb-4">
+                  <span className="text-7xl font-black text-brand-700 leading-none block mb-4">
                     {step.number}
                   </span>
-                  <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                  <h3 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 tracking-tight">
                     {step.title}
                   </h3>
-                  <p className="text-lg text-gray-500 leading-relaxed max-w-md mx-auto lg:mx-0">
+                  <p className="text-lg text-brand-100 opacity-60 leading-relaxed max-w-md mx-auto lg:mx-0">
                     {step.body}
                   </p>
                 </motion.div>

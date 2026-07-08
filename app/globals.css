@@ -5,8 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --brand: #5b5bd6;
-  --accent: #f97316;
+  --brand: #b75d69;
+  --accent: #eacdc2;
 }
 
 * {
@@ -20,33 +20,33 @@ html {
 }
 
 body {
-  background-color: #ffffff;
-  color: #111118;
+  background-color: #1a1423;
+  color: #eacdc2;
   font-family: "Inter", system-ui, sans-serif;
 }
 
 ::selection {
-  background: #e0dfff;
-  color: #12125e;
+  background: #372549;
+  color: #eacdc2;
 }
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, #12125e 0%, #5b5bd6 100%);
+    background: linear-gradient(135deg, #eacdc2 0%, #b75d69 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .glass-nav {
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(26, 20, 35, 0.92);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(91, 91, 214, 0.08);
+    border-bottom: 1px solid rgba(183, 93, 105, 0.12);
   }
 
   .phone-glow {
-    filter: drop-shadow(0 32px 64px rgba(91, 91, 214, 0.28));
+    filter: drop-shadow(0 32px 64px rgba(183, 93, 105, 0.3));
   }
 }
 
@@ -65,7 +65,6 @@ body {
   will-change: transform;
 }
 
-/* Smooth accordion */
 .accordion-content {
   overflow: hidden;
 }
